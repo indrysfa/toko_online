@@ -1,0 +1,293 @@
+
+
+
+
+
+
+
+
+MESSAGES["pr.js.ProductDetail.message.eVoucherNoGift"] = "Produk eVoucher tidak dapat dikirim sebagai hadiah.";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeY.returnY"] = "Tidak bisa dikembalikan, dibatalkan atau ditukar";
+
+MESSAGES["pr.js.ProductDetail.message.pulsa"] = "Produk pulsa tidak dapat dilihat pada halaman rincian produk.";
+
+MESSAGES["pr.js.BigDealDetail.message.noReduce"] = "Kamu dapat memesan minimal {0} buah.";
+
+MESSAGES["pr.js.ProductDetail.message.reviewsCanNotBeWritten"] = "Tidak dapat menulis ulasan.";
+
+MESSAGES["pr.js.ProductDetail.message.noPromotion"] = "Tidak ada promo yang sedang berlangsung.";
+
+MESSAGES["pr.js.ProductDetail.message.inculdedOnYourWishlist02"] = "Apakah kamu ingin melihat isi Wish List?";
+
+MESSAGES["pr.js.ProductDetail.message.inculdedOnYourWishlist01"] = "Telah ditambahkan ke Wish List.";
+
+MESSAGES["pr.js.ProductReview.label.viweAll"] = "Lihat Semua";
+
+MESSAGES["pr.js.ProductDetail.message.selectProductOption"] = "Silakan pilih opsi untuk produk terpilih nomor {0}.";
+
+MESSAGES["pr.js.ProductDetail.label.discountAmount"] = "Nominal Diskon";
+
+MESSAGES["pr.js.ProductReview.message.maximumImage"] = "Kamu hanya dapat mengunggah 3 gambar.";
+
+MESSAGES["pr.js.ProductDetail.message.ok"] = "Ok";
+
+MESSAGES["pr.js.ProductDetail.message.thisItemIsForEmployeesOnly"] = "Produk ini khusus untuk karyawan.";
+
+MESSAGES["pr.js.ProductReview.label.delete"] = "Hapus";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeY.returnN.2"] = "Tidak bisa ditukar";
+
+MESSAGES["pr.js.ProductDetail.message.youAreAlreadyRegistered"] = "Kamu telah menulis ulasan.";
+
+MESSAGES["pr.js.ProductDetail.message.error"] = "Error";
+
+MESSAGES["pr.js.ProductDetail.message.final.price"] = "Anda bisa mendapatkan harga ini dengan mengunduh voucher di bawah ini. Unduh voucher dan nikmati manfaatnya!";
+
+MESSAGES["pr.js.ProductDetail.label.all"] = "All";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeY.returnN.1"] = "Dibatalkan atau dikembalikan dalam";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeN.returnN"] = "Dikembalikan, dibatalkan atau ditukar dalam";
+
+MESSAGES["pr.js.ProductReview.label.photoReviews"] = "Foto Ulasan";
+
+MESSAGES["pr.js.ProductDetail.message.reviewMaxChar"] = "Kamu dapat memasukkan hingga 2,000 karakter. ";
+
+MESSAGES["pr.js.ProductDetail.label.additionalPoint"] = "Tambahan Poin";
+
+MESSAGES["pr.js.ProductDetail.label.selectYourRegion"] = "Pilih Wilayah kamu.";
+
+MESSAGES["pr.js.ProductDetail.message.addCart01"] = "Item ini telah ditambahkan pada cart.";
+
+MESSAGES["pr.js.ProductDetail.message.addCart02"] = "Apakah kamu ingin melihat Daftar Cart?";
+
+MESSAGES["pr.js.ProductDetail.message.noEligibleToReview"] = "Anda tidak dapat menulis ulasan untuk produk ini";
+
+MESSAGES["pr.js.ProductDetail.message.urlCopy"] = "Tekan Ctrl + C untuk menyalin.";
+
+MESSAGES["pr.js.ProductDetail.message.close"] = "Tutup";
+
+MESSAGES["pr.js.ProductDetail.message.notGiftItem"] = "Produk ini tidak dapat dikirimkan sebagai hadiah.";
+
+MESSAGES["pr.js.ProductDetail.message.availableAfterLogin"] = "Tersedia setelah login.";
+
+MESSAGES["pr.js.ProductDetail.message.noCart"] = "Tidak dapat ditambahkan ke Cart.";
+
+MESSAGES["pr.js.ProductDetail.label.additionalIPoint"] = "Tambahan iPOINT";
+
+MESSAGES["pr.js.ProductDetail.message.no"] = "Tidak";
+
+MESSAGES["pr.js.ProductDetail.label.additionalLPoint"] = "Tambahan L.POINT";
+
+MESSAGES["pr.js.ProductDetail.message.alreadyEmInYourWishlist"] = "Produk ini sudah ada dalam Wish List kamu.";
+
+MESSAGES["pr.js.ProductDetail.message.moveToList"] = "";
+
+MESSAGES["pr.js.ProductDetail.message.pleaseSelectAQuantity"] = "Silakan pilih kuantitas.";
+
+MESSAGES["pr.js.BigDealDetail.label.productReviews"] = "Ulasan";
+
+MESSAGES["pr.js.ProductDetail.label.write"] = "Tulis";
+
+MESSAGES["pr.js.ProductDetail.message.InventoryQuantityExceeded"] = "Hanya {0} barang tersisa.";
+
+MESSAGES["pr.js.ProductDetail.label.maximumDiscountAmount"] = "Nominal Maksimum Diskon";
+
+MESSAGES["pr.js.ProductReview.message.verySatisfied"] = "Sangat puas";
+
+MESSAGES["pr.js.ProductReview.label.highScore"] = "Rating Tertinggi";
+
+MESSAGES["pr.js.BigDealDetail.message.limitPurchaseQty"] = "Anda telah mencapai jumlah pesanan maksimum untuk produk ini.";
+
+MESSAGES["pr.js.ProductDetail.message.success"] = "Berhasil";
+
+MESSAGES["pr.js.ProductDetail.label.urlCopy"] = "URL Salin";
+
+MESSAGES["pr.js.ProductDetail.label.partnershipType.PARTNERSHIP"] = "Kartu Kredit/Debit";
+
+MESSAGES["pr.js.ProductReview.label.generalReviews"] = "Ulasan Umum";
+
+MESSAGES["pr.js.ProductDetail.message.urlCopied"] = "URL telah disalin.";
+
+MESSAGES["pr.js.ProductDetail.label.minimumPurchaseAmount"] = "Nominal Minimum Pembelian";
+
+MESSAGES["pr.js.BigDealDetail.message.noIncrement"] = "Kamu hanya dapat memesan {0} buah dalam satu kali pesanan.";
+
+MESSAGES["pr.js.BigDealDetail.message.noDeliveryInfo"] = "Tidak ada info pengiriman.";
+
+MESSAGES["pr.js.ProductReview.label.almostSoldOut"] = "Hampir Habis Terjual";
+
+MESSAGES["pr.js.ProductDetail.message.thereIsNoStock"] = "Stok habis.";
+
+MESSAGES["pr.js.ProductDetail.message.buyElocker"] = "Kamu dapat membeli hingga {0} produk Locker.";
+
+MESSAGES["pr.js.ProductDetail.label.partnershipType"] = "Tipe";
+
+MESSAGES["pr.js.ProductReview.label.lowScore"] = "Rating Terendah";
+
+MESSAGES["pr.js.ProductDetail.message.interestProduct"] = "Produk Menarik Lainnya";
+
+MESSAGES["pr.js.ProductDetail.message.choose.option"] = "Silahkan pilih varian.";
+
+MESSAGES["pr.js.ProductDetail.label.cardName"] = "Partner";
+
+MESSAGES["pr.js.ProductDetail.label.noInterestInstallmentsMonths"] = "Cicilan Bulanan 0%";
+
+MESSAGES["pr.js.ProductDetail.message.duplicateRestocking"] = "Kamu telah berlangganan layanan Back in Stock untuk produk ini.";
+
+MESSAGES["pr.js.ProductDetail.message.download.voucher.failed"] = "Gagal mengunduh voucher";
+
+MESSAGES["pr.js.ProductReview.message.registSocialWishList02"] = "Jika iya, ulasan kamu akan ditambahkan ke Foto Ulasan dan Social Wishlist.";
+
+MESSAGES["pr.js.ProductReview.message.registSocialWishList01"] = "Apakah kamu ingin memuat gambar yang telah kamu unggah ke Social Wishlist? ";
+
+MESSAGES["pr.js.ProductDetail.message.directInput"] = "Silakan masukkan {0}.";
+
+MESSAGES["pr.js.ProductDetail.label.soldout"] = "Stok Habis";
+
+MESSAGES["pr.js.ProductDetail.message.soldout"] = "Produk ini telah habis terjual. Apakah kamu ingin berlangganan layanan Back in Stock?";
+
+MESSAGES["pr.js.ProductDetail.message.selectProductColorOption"] = "Silakan pilih warna untuk produk terpilih nomor {0}.";
+
+MESSAGES["pr.js.ProductReview.message.allowFileFileSize"] = "File yang lebih kecil dari {0} dapat diunggah untuk Foto Ulasan.";
+
+MESSAGES["pr.js.ProductDetail.message.noElocker"] = "Pengiriman Locker tidak dapat dipilih untuk produk dengan free gift. ";
+
+MESSAGES["pr.js.ProductDetail.label.partnershipType.BANKTRANSFERPARTNERSHIP"] = "Bank Transfer";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeN.returnN.1"] = "Dikembalikan atau ditukar dalam";
+
+MESSAGES["pr.js.ProductReview.message.reviewsCanBeRegisteredOnlyOnce"] = "Ulasan hanya dapat didaftarkan satu kali.";
+
+MESSAGES["pr.js.ProductReview.label.recentlyRegistered"] = "Terakhir Didaftarkan";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeN.returnN.2"] = "Tidak bisa dibatalkan";
+
+MESSAGES["pr.js.ProductDetail.message.selectOption"] = "Silakan pilih {0}.";
+
+MESSAGES["pr.js.ProductDetail.message.lockerNoGift"] = "Produk locker tidak dapat dikirim sebagai hadiah.";
+
+MESSAGES["pr.js.ProductDetail.message.noProduct02"] = "Kamu akan diarahkan ke halaman utama.";
+
+MESSAGES["pr.js.ProductDetail.message.noProduct01"] = "Informasi produk tidak tersedia.";
+
+MESSAGES["pr.js.ProductDetail.message.addCart.show.cart"] = "Lihat Cart";
+
+MESSAGES["pr.js.ProductReview.message.somewhatDissatisfied"] = "Tidak puas";
+
+MESSAGES["pr.js.ProductDetail.message.otherTheSameProduct"] = "Produk Serupa";
+
+MESSAGES["pr.js.ProductDetail.label.month"] = "Bulan";
+
+MESSAGES["pr.js.ProductDetail.label.overRp"] = "Diatas Rp";
+
+MESSAGES["pr.js.ProductReview.message.veryDissatisfied"] = "Sangat tidak puas";
+
+MESSAGES["pr.js.ProductReview.message.thereAreNoReviews"] = "Tidak terdapat ulasan.";
+
+MESSAGES["pr.js.ProductDetail.message.noProduct"] = "Tidak ada informasi produk.";
+
+MESSAGES["pr.js.ProductDetail.message.unwishlist.success"] = "Dihapus dari wishlist Anda";
+
+MESSAGES["pr.js.ProductDetail.message.MNbenefit"] = "Saat kamu membeli {0} produk, dapatkan {1} produk.";
+
+MESSAGES["pr.js.ProductDetail.message.Giftbenefit"] = "Saat kamu membeli {0} produk, dapatkan {1} hadiah untuk {2}.";
+
+MESSAGES["pr.js.ProductDetail.message.noShortDistance01"] = "Produk ini bukan produk toko short distance.";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeN.returnY.2"] = "Tidak bisa dikembalikan";
+
+MESSAGES["pr.js.ProductDetail.message.cancel"] = "Batal";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeN.returnY.1"] = "Dibatalkan atau ditukar dalam";
+
+MESSAGES["pr.js.ProductDetail.label.selectYourCity"] = "Pilih Kota kamu";
+
+MESSAGES["pr.js.ProductDetail.message.quantityNotNumeric"] = "Jumlah harus berupa angka";
+
+MESSAGES["pr.js.ProductDetail.message.noShortDistance04"] = "Produk ini tidak tersedia di toko pilihan kamu.";
+
+MESSAGES["pr.js.ProductDetail.label.months"] = "Bulan";
+
+MESSAGES["pr.js.ProductDetail.message.noShortDistance02"] = "Silakan ubah toko short distance kamu, lalu tambahkan ke cart dan lakukan pembelian. ";
+
+MESSAGES["pr.js.ProductDetail.message.noShortDistance03"] = "Klik OK untuk memilih toko short distance kamu.";
+
+MESSAGES["pr.js.BigDealDetail.message.imageDeleteConfrim"] = "Apakah kamu yakin ingin menghapus gambar ini?";
+
+MESSAGES["pr.js.ProductDetail.message.wishlist.success"] = "Ditambahkan ke wishlist Anda";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeN.returnY.2"] = "Tidak bisa dibatalkan atau dikembalikan";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeN.returnY.1"] = "Bisa ditukar dalam";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeY.returnY.2"] = "Tidak bisa dikembalikan atau ditukar";
+
+MESSAGES["pr.js.ProductDetail.message.cancelN.exchangeY.returnY.1"] = "Bisa dibatalkan dalam";
+
+MESSAGES["pr.js.ProductDetail.label.discountRate"] = "Persentase Diskon";
+
+MESSAGES["pr.js.BigDealDetail.message.impossibleGift"] = "Terdapat produk yang tidak dapat kamu beli sebagai hadiah.";
+
+MESSAGES["pr.js.ProductDetail.message.inputOptionField"] = "Silakan tulis kolom opsi.";
+
+MESSAGES["pr.js.ProductDetail.message.days"] = "hari";
+
+MESSAGES["pr.js.ProductReview.message.neitherSatisfiedNorDissatisfied"] = "Netral";
+
+MESSAGES["pr.js.ProductDetail.message.thisItemIsForB2EOnly"] = "Produk ini khusus untuk B2E.";
+
+MESSAGES["pr.js.ProductDetail.message.reviewDeleteConfirm"] = "Apakah kamu yakin ingin menghapus ulasan yang telah dipilih?";
+
+MESSAGES["pr.js.ProductDetail.message.addCart.continue.shopping"] = "Lanjut Berbelanja";
+
+MESSAGES["pr.js.BigDealDetail.message.pleaseSelectAnProduct"] = "Silakan pilih produk.";
+
+MESSAGES["pr.js.ProductDetail.label.delete"] = "Hapus";
+
+MESSAGES["pr.js.BigDealDetail.message.productDeleteConfirm"] = "Apakah kamu yakin ingin menghapus produk yang dipilih?";
+
+MESSAGES["pr.js.ProductReview.message.allowFileExtention"] = "Hanya file tipe gambar {0} yang dapat diunggah untuk Foto Ulasan.";
+
+MESSAGES["pr.js.ProductDetail.message.InventoryQuantityExceededStatus"] = "Melebihi Kuantitas Stok";
+
+MESSAGES["pr.js.ProductDetail.message.selectProductSizeOption"] = "Silakan pilih ukuran untuk produk terpilih nomor {0}.";
+
+MESSAGES["pr.js.ProductDetail.message.reviewMaxByte"] = "Kamu dapat memasukkan data hingga 2.000 byte.";
+
+MESSAGES["pr.js.ProductDetail.message.registRestocking"] = "Kamu telah berlangganan layanan Back in Stock untuk produk ini. Apakah kamu ingin melihat halaman Back in Stock?";
+
+MESSAGES["pr.js.ProductDetail.message.enterContent"] = "Kamu dapat menuliskan 10 hingga 2,000 karakter untuk ulasan produk.";
+
+MESSAGES["pr.js.ProductDetail.message.claimPhohb02"] = "dikembalikan";
+
+MESSAGES["pr.js.ProductDetail.message.claimPhohb01"] = "Item ini tidak dapat";
+
+MESSAGES["pr.js.ProductDetail.message.claimPhohb04"] = "dibatalkan";
+
+MESSAGES["pr.js.ProductDetail.message.pleaseSelectAnOption"] = "Silakan pilih opsi.";
+
+MESSAGES["pr.js.ProductReview.label.leftInStock"] = "Stok Tersisa";
+
+MESSAGES["pr.js.ProductDetail.message.claimPhohb03"] = "ditukar";
+
+MESSAGES["pr.js.BigDealDetail.message.alreadySelectedItem"] = "Produk ini telah dipilih.";
+
+MESSAGES["pr.js.ProductDetail.label.point"] = "Poin";
+
+MESSAGES["pr.js.ProductDetail.message.claimPhohb05"] = "atau";
+
+MESSAGES["pr.js.ProductReview.message.somewhatSatisfied"] = "Puas";
+
+MESSAGES["pr.js.ProductDetail.message.yes"] = "Ya";
+
+MESSAGES["pr.js.ProductDetail.message.errorOccur"] = "Terjadi error.";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeY.returnN.2"] = "Tidak bisa dibatalkan atau ditukar";
+
+MESSAGES["pr.js.ProductDetail.message.cancelY.exchangeY.returnN.1"] = "Bisa dikembalikan dalam";
+
+MESSAGES["pr.js.ProductDetail.message.eVoucherNoCart"] = "Produk eVoucher tidak dapat ditambahkan ke Cart.";
+
+MESSAGES["pr.js.ProductDetail.message.selectProductMaterialOption"] = "Silakan pilih material untuk produk terpilih nomor {0}.";

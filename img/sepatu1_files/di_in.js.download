@@ -1,0 +1,19 @@
+
+
+
+
+
+
+
+
+MESSAGES["di.js.mallinmall.mart.Youarelookingat"] = "Kami dapat mengirim produk Flash Delivery dari LOTTE Mart terdekat dari alamat kamu.";
+
+MESSAGES["di.js.display.liveshop.purchaseOnMobile"] = "Beli pada Mobile";
+
+MESSAGES["di.js.display.liveshop.getItNow"] = "Get It Now";
+
+MESSAGES["di.js.display.liveshop.purchasePremiumMembership"] = "Berlangganan Keanggotaan Premium";
+
+MESSAGES["di.js.pulsa.not.available"] = "Order untuk produk jenis ini tidak tersedia saat ini. Silahkan memilih produk lain.";
+
+MESSAGES["di.js.combobox.others"] = "LAINNYA";

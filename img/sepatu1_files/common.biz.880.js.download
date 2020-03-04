@@ -1,0 +1,469 @@
+/**
+ * 비즈 서비스 공통 js
+ */
+$.namespace("indolotte.common.Biz");
+(function(w, d, $, pns, ns) {
+	var biz = {
+		init: function() {
+			var that = this;
+
+			$(d).ready(function() {
+				$(d).off(".bizLoginCheck").on("click.bizLoginCheck submit.bizLoginCheck", "[data-login-check=true]", function(e) {
+					e.preventDefault();
+
+					var $el = $(this),
+						href = $el.attr("href"),
+						loginCallBack = $el.data("loginCallBack"),
+						isCheckedLogin = $(this).attr("data-login-check") === "true",
+						isLogin = false;
+
+					var callBack = function(resData) {
+						if(!!href) {
+							w.location.href = href;
+						}
+					};
+
+					if(typeof loginCallBack === "function") {
+						callBack = loginCallBack;
+					}
+
+//					that.login.showLoginLayerPopup.call(that.login, function(resData) {
+//						that.login.isLogin().done(function() {
+//							setTimeout(function() {
+//								callBack(resData);
+//							}, 300);
+//						});
+//					});
+				});
+			});
+
+            $(w).on("popstate.biz hashchange.biz", function(e) {
+                var href = w.location.href;
+                pns.LayerPopup = pns.LayerPopup || {};
+                $.each(pns.LayerPopup, function(key) {
+                   if( href.indexOf(key) === -1 ) {
+                	   var layerPopup = this;
+
+                       if(layerPopup.$container && layerPopup.$container.is(":visible")) {
+                    	   layerPopup.closeLayer(true);
+                       }
+                   }
+                });
+
+                if( href.indexOf("#layer=") < 0 ) {
+                	pns.common.Util.dimmed.hide();
+                } else {
+                	pns.common.Util.dimmed.show();
+                }
+            });
+		},
+		login: {
+			
+			goToLogin : function(redirectFlag, appendParam) {
+				//https://ilotte.atlassian.net/browse/IRF-3571
+				localStorage.setItem('prev',window.location.href);
+				var loginUrl = CONSTANTS.baseUrl + "login/loginForm.do";
+				if (redirectFlag) {
+					var redirectUrl = document.location.href;
+					redirectUrl = redirectUrl.replace(/javascript\s*:\s*/gi, "java-script:");
+					//appending url parameter
+					if (appendParam){
+						appender = "";
+						if (window.location.search) {
+							appender = "&"
+						} else if (redirectUrl.indexOf("?") < 0) {
+							appender = "?"
+						}
+						redirectUrlHashIdx = redirectUrl.indexOf("#");
+						if (redirectUrlHashIdx >= 0) {
+							redirectUrl = redirectUrl.substring(0, redirectUrlHashIdx) + appender + appendParam + redirectUrl.substring(redirectUrlHashIdx); 
+						} else {
+							redirectUrl += appender + appendParam
+						}
+					}
+					redirectUrl = window.encodeURIComponent(redirectUrl);
+					location.href = loginUrl + "?redirectUrl=" + redirectUrl;
+				} else {
+					location.href = loginUrl;
+				}
+			},
+			
+			requestLogin: function(loginData, callBack) {
+				var reqData = {
+					userid: loginData.userId,
+					password: loginData.password
+				};
+				reqData[window.pageEnv.csrf.key] = window.pageEnv.csrf.value;
+
+				callBack = callBack || function() {};
+
+				pns.common.Ajax.sendRequest(
+					"POST",
+					CONSTANTS.baseUrl + "login/loginProcess.do",
+					reqData,
+					function(response) {
+						localStorage.setItem('FSLogin', true);
+						var resData = JSON.parse(response);
+						pns.common.Biz.login.isLogin();
+						callBack(resData);
+					},
+					true
+				);
+			},
+
+//			showLoginLayerPopup: function(callBack) {
+//				var that = this,
+//					layerPageID = "loginAndRegistLayerPopup",
+//					layerPageUrl = CONSTANTS.baseUrl + "static-root/js/me/login/loginAndRegistLayerPopup.js",
+//					layerOptions = {
+//						parent: this,
+//						param: $.param({
+//						})
+//					};
+//
+//				callBack = typeof callBack === "function" ? callBack : function() {};
+//
+//				that.isLogin()
+//					.done(function(resData) {
+//						that.updateCSRF();
+//						callBack(resData);
+//					})
+//					.fail(function() {
+//						if(that[layerPageID]) {
+//							that[layerPageID].openLayer(layerOptions);
+//							that[layerPageID].callBack = callBack;
+//						} else {
+//							$.getScript(layerPageUrl).done(function() {
+//								that[layerPageID] = pns.LayerPopup[layerPageID];
+//								that[layerPageID].openLayer(layerOptions);
+//								that[layerPageID].callBack = callBack;
+//							});
+//						}						
+//					});
+//			},
+
+			/**
+			 * sns 로그인 인증을 위한 팝업 호출 메소드
+			 * @param String snsType "'oauthGoogle' or 'oauthFacebook' or 'oauthLPoint'"
+			 * @return null
+			 */
+			showSnsOauthPopup: function(snsType, redirectUrl) {
+				snsType = snsType || "oauthFacebook";
+				var windowoptions = snsType === "oauthFacebook" ? "width=1,height=1" : "width=445,height=615";
+				windowoptions = snsType === "oauthLPoint" ? "width=445,height=314" : windowoptions;
+
+				redirectUrl = (redirectUrl || "").replace(/javascript\s*:\s*/gi, "java-script:");
+				w.snsOauthPopup = pns.common.Util.winNewOpen({
+				    url: CONSTANTS.baseUrl + "login/" + snsType + ".do",
+				    method: "POST",
+				    targetwinname : "result",
+				    windowoptions: windowoptions,
+				    data: {
+				    	redirectUrl: redirectUrl
+				    }
+				});
+			},
+
+			facebookCallBack: function(userInfo) {
+				var that = pns.common[ns].login;
+
+				w.console.log(userInfo);
+				that.snsRegistOrLogin(userInfo);
+			},
+
+			googleCallBack: function(userInfo) {
+				var that = pns.common[ns].login;
+
+				w.console.log(userInfo);
+				that.snsRegistOrLogin(userInfo);
+			},
+
+			/**
+			 * reqData type object
+			 * {
+			 * 		sns: "facebook", //or "google"
+			 * 		name: "김홍기",
+			 * 		email: "freekhk@nate.com",
+			 * 		gender: "male",
+			 * 		id: "1445516332149616"
+			 * }
+			 */
+			snsRegistOrLogin: function(reqData, callBack) {
+				var that = this;
+
+				reqData.gender = reqData.gender === "male" ? "01" : "02";
+				callBack = callBack || function() {};
+
+				pns.common.Ajax.sendJSONRequest(
+					"GET",
+					CONSTANTS.baseUrl + "me/service/snsMemberRegistOrLogin.do",
+					reqData,
+					function(response) {
+						w.console.log(response);
+						that.requestLogin({
+							userId: response.data.email
+						}, function() {
+							callBack(response);
+						});
+					},
+					true
+				);
+			},
+
+			isLogin: function() {
+				var that = this,
+					$defer = $.Deferred();
+
+				pns.common.Ajax.sendJSONRequest(
+					"GET",
+					CONSTANTS.baseUrl + "api/me/usermgmt/getLoginInfo",
+					{},
+					function(response) {
+						that.updateCSRF();
+
+						if(response.code == 200) {
+							that.updateLoginUI(response);
+							$defer.resolve(response);
+						} else {
+							$defer.reject(response);
+						}
+					},
+					false,
+					true
+				);
+
+				return $defer.promise();
+			},
+
+			updateCSRF: function() {
+				var $defer = $.Deferred();
+
+				pns.common.Ajax.sendJSONRequest(
+					"GET",
+					CONSTANTS.baseUrl + "api/base/web/csrf",
+					{},
+					function(response) {
+						if(!!response.token && w.pageEnv.csrf.value != response.token) {
+							w.pageEnv.csrf.value = response.token;
+							var $csrf = $("[name=" + pageEnv.csrf.key + "]");
+							$.each($csrf, function() {
+								var tagName = this.tagName,
+									$el = $(this);
+
+								if(tagName === "META") {
+									$el.attr("content", response.token);
+								} else {
+									$el.val(response.token);
+								}
+							});
+							
+						}
+						$defer.resolve(response);
+					},
+					false,
+					true
+				);
+
+				return $defer.promise();
+			},
+
+			updateUSERObj: function(resData) {
+				if(resData.code == "200") {
+					w.USER = {
+						genderCd: resData.data.genderCode || "",
+						gradeCd: resData.data.memberGradeCode || "",
+						id: resData.data.loginId || "",
+						isLoggedIn: resData.data.login || false,
+						name: resData.data.memberName || "Guest",
+						userSeq: resData.data.memberNumber || -1
+					};
+				} else {
+					w.USER = {
+						genderCd: "",
+						gradeCd: "",
+						id: "",
+						isLoggedIn: false,
+						name: "Guest",
+						userSeq: -1
+					};
+				}
+			},
+			
+			updateLoginUI: function(resData) {
+				var that = this;
+
+				// 동적으로 로그인시 USER 객체 정보 갱신시킴
+				that.updateUSERObj(resData);
+				/**
+				 * 로그인시 처리 할 메소드 등록
+				 * 예) footer 영역 로그인 시 UI를 동적으로 Update 시키는 메소드
+				 */
+				//indolotte.common.updateFooterUI(); <--- 메소드 예제
+			},
+
+			updateLogoutUI: function(resData) {
+				var that = this;
+
+				// 동적으로 로그아웃시 USER 객체 정보 갱신시킴
+				that.updateUSERObj(resData);
+				/**
+				 * 로그아웃시 처리 할 메소드 등록
+				 * 예) footer 영역 로그아웃 시 UI를 동적으로 Update 시키는 메소드
+				 */
+				// indolotte.common.updateFooterUI(); <--- 메소드 예제
+			},
+			
+			fullStoryLogin: function() {
+				try {
+					if (USER.isLoggedIn && FS !== undefined) {
+						FS.identify(USER.userSeq, {
+							displayName: USER.name,
+							email: USER.id
+						});
+					}
+				} catch(err) {}
+			},
+			
+			fullStoryLogout: function() {
+				try {
+					if (!USER.isLoggedIn && FS !== undefined) {
+						FS.identify(false);
+					}
+				} catch(err) {}
+			}
+		},
+		
+		logout: function() {
+			localStorage.setItem('FSLogin', false);
+			w.location.href='/login/logout.do';
+		},
+
+		/**
+		 * 우편번호 주소검색 팝업
+		 */
+		postSearchPopup: function(callBack) {
+			var windowoptions = "width=445,height=615";
+
+			w.postSearchPopup = pns.common.Util.winNewOpen({
+			    url: CONSTANTS.baseUrl + "cm/common/postSearchPopup.do",
+			    method: "POST",
+			    targetwinname : "postserch",
+			    windowoptions: windowoptions,
+			    callBack: callBack,
+			    data: {
+			    }
+			});
+		},
+
+		/**
+		 * 우편번호 주소검색 레이어팝업
+		 */
+		/*
+		postSearchLayerPopup: function(callBack) {
+			var that = this,
+				layerPageID = "findAddressLayerPopup",
+				layerPageUrl = CONSTANTS.baseUrl + "static-root/js/me/mypage/popup/findAddressLayerPopup.js",
+				layerOptions = {
+					parent: this,
+					param: $.param({
+					})
+				};
+
+			callBack = typeof callBack === "function" ? callBack : function() {};
+
+			if(that[layerPageID]) {
+				that[layerPageID].openLayer(layerOptions);
+				that[layerPageID].callBack = callBack;
+			} else {
+				$.getScript(layerPageUrl).done(function() {
+					that[layerPageID] = pns.LayerPopup[layerPageID];
+					that[layerPageID].openLayer(layerOptions);
+					that[layerPageID].callBack = callBack;
+				});
+			}
+		},
+		*/
+
+		/**
+		 * indolotte 네트워크 Cache Storage
+		 * 
+		 */
+		storageOfSendRequest: (function() {
+			return new pns.Storage({
+				prefixKey: "ILSHP_SEND_REQUEST_",
+				expireTime: 10 * 60 * 1000 // 10 min
+			});
+		})(),
+
+		/**
+		 * my account lnb
+		 */
+		updateMyAccountLnb: function(lnbId) {
+			var $menu = $("#" + lnbId),
+				names = [],
+				$parent = $menu.parent().parent().parent().find("> div"),
+				mylotteTitle = $(".profile_tit").text();
+
+			$menu.addClass("on");
+
+			setTimeout(function() {
+				$parent.click();
+			}, 800);
+
+			names.push("Home");
+			names.push(mylotteTitle);
+			names.push($parent.text());
+			names.push($menu.text());
+
+			$(".location").html("");	
+			$.each(names, function(key, name) {
+				if(name === "Home") {
+					$(".location").append('<li><span class="home"><a href="' + CONSTANTS.baseUrl + '">' +  MESSAGES.format("me.js.common.location.home") + '</a></span></li>');
+				} else if(name === mylotteTitle) {
+					$(".location").append('<li><span><a href="' + CONSTANTS.baseUrl + 'me/service/oauth/memberMain.do">' +  name + '</a></span></li>');
+				} else {
+					$(".location").append('<li><span>' +  name + '</span></li>');
+				}
+			});
+		}
+	};
+
+	$.extend(pns.common[ns], biz);
+	pns.common[ns].init();
+
+	// FullStory
+	$(window).load(function() {
+		var FSLogin = localStorage.getItem('FSLogin');
+		var FSIdentity = localStorage.getItem('FSIdentity');
+
+		if (FSLogin == null) {
+			localStorage.setItem('FSLogin', false);
+		}
+		if (FSIdentity == null) {
+			localStorage.setItem('FSIdentity', false);
+		}
+		
+		if(FSLogin == "true" && FSIdentity == "false") {
+			pns.common.Biz.login.fullStoryLogin();
+			localStorage.setItem('FSIdentity', true);
+		}
+		
+		if (FSLogin == "false" && FSIdentity == "true") {
+			pns.common.Biz.login.fullStoryLogout();
+			localStorage.setItem('FSIdentity', false);
+		}
+	});
+
+	$(window).load(function() {
+		// RMK Login Restrict (IRF-2258)
+		// RMKInterceptor.java
+		// LoginFailureHandler.java
+		var cookieKey = "errMsg";
+		var cookieValue = lotteindo.common.Cookie.getCookie(cookieKey);
+		if (cookieValue !== null && cookieValue !== "") {
+			indolotte.common.Util.alert(cookieValue.replace(/"/g, '')); //remove double apostrophe
+			lotteindo.common.Cookie.setCookie(cookieKey, cookieValue, new Date(), "/"); // make it expired to remove cookie
+		}
+	});
+	
+})(window, document, jQuery, indolotte, "Biz");

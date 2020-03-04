@@ -1,0 +1,8 @@
+*{margin: 0; padding: 0;}
+
+.wrapper .rightbar{
+    float: right;
+    width: 10%;
+    background-color: #f1f1f1;
+    height: 400px;
+}

@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+// global variables : for system environment
+var CONSTANTS = {};
+CONSTANTS.baseUrl = '/';
+CONSTANTS.jsUrl = '/static-root/js/';
+CONSTANTS.cssUrl = '/static-root/css/';
+CONSTANTS.imgUrl = '/static-root/images/';
+CONSTANTS.cdnImgUrl = 'https://dxclnrbvyw82b.cloudfront.net/';
+CONSTANTS.imgUrlLang = '/static-root/images/lang/in';
+CONSTANTS.cabUrl = '/static-root/cab/';
+CONSTANTS.authorityCheck = '';
+CONSTANTS.defaultSystemLanguage = 'ko';
+CONSTANTS.currentLocale = 'id';
+CONSTANTS.currentLocaleLanguage = 'in';
+CONSTANTS.dbLocaleLanguage = 'in';
+CONSTANTS.fileuploadUrl = '/static-root/upload/';
+CONSTANTS.goodsImgaeUploadUrl = 'https://www.ilotte.com/upload/goods';
+CONSTANTS.sampleFileuploadUrl = '/static-root/fileupload/';
+CONSTANTS.displayImageUploadUrl = '/static-root/upload/display/';
+CONSTANTS.eventImageUploadUrl = '';
+CONSTANTS.snsLocalUrl = 'https://www.ilotte.com';
+
+
+

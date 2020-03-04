@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+// global variables : for localized messages
+var MESSAGES = {
+    // same function in java message format  
+    format : function(msgCode, args) {
+        var str = MESSAGES[msgCode];
+        if (!str) {
+            console.warn("valid msgCode["+msgCode+"] isn't exist.");
+            return "";
+        }
+        for (arg in args) {
+            str = str.replace(RegExp("\\{" + arg + "\\}", "gi"), args[arg]);
+        }
+        return str;
+    }
+};
+
+
+MESSAGES["common.js.otp.otpcode.format"] = "Format kode OTP salah.";
+
+MESSAGES["common.js.sent"] = "Terkirim";
+
+MESSAGES["common.js.popup.voucher.title.delivery"] = "FREE DELIVERY";
+
+MESSAGES["common.js.sample"] = "pesan sampel";
+
+MESSAGES["common.js.otp.otpcode.required"] = "Silahkan masukan kode OTP.";
+
+MESSAGES["common.js.message.PM-004"] = "Kamu telah mengunduh voucher ini.";
+
+MESSAGES["common.js.popup.voucher.title.product"] = "PRODUCT VOUCHER";
+
+MESSAGES["common.js.popup.voucher.title.gift"] = "GIFT VOUCHER";
+
+MESSAGES["common.js.browser.title.otp"] = "iLotte - OTP";
+
+MESSAGES["common.js.popup.voucher.title.order"] = "ORDER VOUCHER";
+
+MESSAGES["common.js.otp.phone.number"] = "Silahkan masukan nomor telepon yang valid.";
+
+MESSAGES["common.js.message.showmyvoucher"] = "Lihat Voucher Saya";
+
+MESSAGES["common.js.otp.phone.required"] = "Silahkan masukan nomor telepon anda.";
+
+MESSAGES["common.js.success"] = "Berhasil!";
+
+MESSAGES["common.js.popup.login.restricted"] = "Maaf akun anda sudah diblokir. Mohon hubungi Customer Service kami di 1 500 757 untuk keterangan lebih lanjut. Terimakasih.";

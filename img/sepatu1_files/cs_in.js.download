@@ -1,0 +1,105 @@
+
+
+
+
+
+
+
+
+MESSAGES["cs.js.oneToOne.regist.content"] = "Isi Pertanyaan";
+
+MESSAGES["cs.js.oneToOne.search.searchPeriod.invalid"] = "Tanggal berakhir pencarian tidak dapat lebih awal dari tanggal mulai pencarian";
+
+MESSAGES["cs.js.evaluation.regist.message.registed"] = "Survei kepuasan pelanggan telah terdaftar.";
+
+MESSAGES["cs.js.liveChat.message.inVaild.login"] = "Informasi pelanggan adalah wajib.<br>Silakan Login. ";
+
+MESSAGES["cs.js.liveChat.message.operatinghour.start.hours"] = "0800";
+
+MESSAGES["cs.js.common.button.emailUs"] = "Email Us";
+
+MESSAGES["cs.js.oneToOne.cancel.message"] = "Apakah kamu yakin ingin meninggalkan halaman ini?<br>Data yang kamu masukkan tidak akan disimpan. ";
+
+MESSAGES["cs.js.evaluation.regist.message.inValid"] = "Apakah kamu puas dengan jawaban kami?\nSilakan beri penilaian atas layanan kami :-)";
+
+MESSAGES["cs.js.evaluation.regist.message.success"] = "Survei telah selesai.";
+
+MESSAGES["cs.js.oneToOne.regist.inValid.content"] = "<p class='snote error'>Silakan masukkan konten.</p>";
+
+MESSAGES["cs.js.common.title.emailUs"] = "iLOTTE-Customer Service-Email Us";
+
+MESSAGES["cs.js.common.title.evaluation"] = "iLOTTE-Customer Service-Survei Kepuasan Pelanggan";
+
+MESSAGES["cs.js.oneToOne.containHtmlInvalid.message"] = "Kamu hanya dapat memasukkan judul dan isi pertanyaan dengan huruf, angka, dan simbol valid yang tidak mengandung tag-tag HTML.";
+
+MESSAGES["cs.js.oneToOne.regist.inquiryPopUpTitle"] = "Pertanyaan Email";
+
+MESSAGES["cs.js.oneToOne.fileNameInValid.message"] = "Kamu hanya dapat mengunggah file dengan<br> judul kurang dari 30 karakter.";
+
+MESSAGES["cs.js.oneToOne.regist.invalid.orderNumber"] = "<p class='snote error'>Silakan pilih produk yang telah dipesan</p>";
+
+MESSAGES["cs.js.liveChat.message.inVaild.enterName"] = "Silakan masukkan nama kamu";
+
+MESSAGES["cs.js.common.errors.maxlength"] = "{0} tidak bisa lebih dari {1} karakter.";
+
+MESSAGES["cs.js.oneToOne.regist.inValid.inquiryType"] = "<p class='snote error'>Silakan pilih tipe pertanyaan kamu</p>";
+
+MESSAGES["cs.js.common.errors.char"] = "{0} harus {1} karakter.";
+
+MESSAGES["cs.js.common.form.errors.required"] = "<p class='snote error'>{0} wajib.</p>";
+
+MESSAGES["cs.js.FAQ.view.list.totalCount"] = "TOTAL";
+
+MESSAGES["cs.js.FAQ.view.list.empty.message"] = "Tidak ada hasil pencarian untuk ‘{0}’";
+
+MESSAGES["cs.js.oneToOne.replyEmpty.message"] = "Pesan tidak boleh kosong";
+
+MESSAGES["cs.js.FAQ.view.list.empty.category.message"] = "Tidak ada konten terdaftar.";
+
+MESSAGES["cs.js.common.errors.minlength"] = "{0} tidak bisa kurang dari {1} karakter.";
+
+MESSAGES["cs.js.common.title.faq"] = "iLOTTE-Customer Service-FAQ";
+
+MESSAGES["cs.js.common.errors.required"] = "{0} wajib.";
+
+MESSAGES["cs.js.oneToOne.regist.inValid.inquiryTitle"] = "<p class='snote error'>Silakan masukkan judul.</p>";
+
+MESSAGES["cs.js.liveChat.message.inValid.alreadyRequested"] = "Kamu telah mengajukan permintaan chat. Silakan tunggu sebentar.";
+
+MESSAGES["cs.js.liveChat.message.inValid.needRefresh"] = "Maaf terjadi kendala saat menghubungkan ke live chat. Silakan coba kembali dan refresh browser dan untuk menggunakan live chat.";
+
+MESSAGES["cs.js.oneToOne.replySuccess.message"] = "Pesan sukses dikirim";
+
+MESSAGES["cs.js.common.title.emailList"] = "iLOTTE-Customer Service-Mailbox";
+
+MESSAGES["cs.js.common.title.main"] = "iLOTTE-Customer Service";
+
+MESSAGES["cs.js.oneToOne.product.nodata.message"] = "Kode produk tidak valid.";
+
+MESSAGES["cs.js.oneToOne.regist.inquiryTitle"] = "Judul Pertanyaan";
+
+MESSAGES["cs.js.common.title.notice"] = "iLOTTE-Customer Service-Notifikasi";
+
+MESSAGES["cs.js.oneToOne.fileInValid.message"] = "Kamu hanya dapat mengunggah file jpg, gif, dan png kurang dari 20MB.";
+
+MESSAGES["cs.js.liveChat.message.inVaild.inquiryType"] = "Silakan pilih tipe pertanyaan kamu.";
+
+MESSAGES["cs.js.common.button.login"] = "Login";
+
+MESSAGES["cs.js.oneToOne.regist.invalid.productName"] = "<p class='snote error'>Nama produk dibutuhkan. Silakan masukkan nomor produk dan lalu cari produk untuk mendapatkan nama produk</p>";
+
+MESSAGES["cs.js.oneToOne.submitted.message"] = "Pertanyaan kamu telah selesai.<br>Kamu dapat memeriksa rincian pertanyaan melalui kotak Mailbox pada akun Anda.";
+
+MESSAGES["cs.js.common.form.errors.minlength"] = "<p class='snote error'>{0} tidak bisa kurang dari {1} karakter.</p>";
+
+MESSAGES["cs.js.liveChat.message.operatinghour.end.hours"] = "2300";
+
+MESSAGES["cs.js.FAQ.view.category.all"] = "Semua";
+
+MESSAGES["cs.js.liveChat.message.inVaild.operatinghour"] = "Maaf live chat saat ini sedang tidak tersedia.<br>Silakan ajukan pertanyaan melalui layanan Email Us.";
+
+MESSAGES["cs.js.oneToOne.regist.inValid.maxlength.inquiryTitle"] = "<p class='snote error'>Maaf maksimal judul pertanyaan 60 karakter.</p>";
+
+MESSAGES["cs.js.oneToOne.regist.productNumber"] = "Nomor Produk";
+
+MESSAGES["cs.js.common.errors.byte"] = "{0} harus {1} byte.";

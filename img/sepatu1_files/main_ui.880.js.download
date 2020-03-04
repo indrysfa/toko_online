@@ -1,0 +1,12 @@
+$(function() {
+	//main popbanner
+	$('.top_popbanner_wrap .btn_close').click(function() {
+		$('.top_popbanner_wrap').hide();
+	});
+	$('.top_linebanner .btn_close').click(function() {
+		$('.top_linebanner').hide();
+	});
+	$('.btn_cat_close').click(function(){
+		$('.allmenus_ctgs>li').removeClass('on');
+	});
+})

@@ -1,0 +1,325 @@
+@charset "utf-8";
+
+/* title */
+.company_wrap .title_area {border-bottom:1px solid #e2e2e2; padding-bottom:8px; margin-bottom:27px;}
+.company_wrap .title_area h3 {font-size:18px; color:#222;}
+
+
+/* content box */
+.company_wrap .content_bx { color:#222; font-size:12px; margin-bottom:50px;}
+.company_wrap .content_bx .s_tit {margin-bottom:10px;font-weight:bold;}
+.company_wrap .content_bx .s_tit span {display:inline-block; width:14px; height:9px; margin-right:5px; background: url(../images/company/sp_ico_common.png) no-repeat 0 0;}
+
+.company_wrap .content_bx.line {border-bottom:1px solid #ececec; padding-bottom:50px;}
+
+
+/* ilotte logo */
+.company_wrap .ilotte_logo {border:1px solid #e2e2e2; border-top:1px solid #eee; background: url(../images/company/logo_bg_pattern.png) repeat 0 0; height:139px; text-align:center; padding-top:34px; box-sizing:border-box; }
+
+
+
+/* top_about */
+.company_wrap .top_about_logo  {text-align:center; border-bottom:1px solid #e2e2e2; padding-bottom:35px; }
+.company_wrap .top_about li {color:#444; display: inline-block; width:49%; vertical-align:top; margin-top:40px; box-sizing:border-box}
+.company_wrap .top_about li:nth-child(even) {padding-left:20px;}
+.company_wrap .top_about strong {font-size:18px; color:#222; display:block; margin-bottom:10px; line-height:18px;}
+.company_wrap .top_about strong span {font-size:24px; color:#db2c27;}
+
+
+
+/* explanation */
+.company_wrap .explanation dt{font-size:12px;font-weight:bold; margin-bottom:3px; color:#222;}
+.company_wrap .explanation dt span {display:inline-block; margin-right:8px; border-radius:8px; text-align:center; width:16px; height:16px; background:#666; color:#fff; font-weight:normal; font-size:11px;}
+.company_wrap .explanation dt span.color {display:inline-block; background:none; width:auto; height:auto; font-weight:normal; font-size:12px; color:#666}
+.company_wrap .explanation dd{font-size:12px; font-weight:normal; margin-bottom:27px; color:#666; line-height:16px;}
+.company_wrap .explanation dd .gray_bx {}
+.company_wrap .explanation dd .gray_bx li:first-child {margin-top:0;}
+.company_wrap .explanation dd .gray_bx li {margin-top:30px; padding-left:45px; position:relative;}
+.company_wrap .explanation dd .gray_bx li .txt {display: inline-block; color:#666}
+
+.company_wrap .explanation dd .gray_bx li .tit {font-size:12px; display:block; color:#222}
+.company_wrap .explanation dd .gray_bx li .icon {display:inline-block; position:absolute; top:0; left:0; width:28px; height:28px; background: url(../images/company/sp_ico_common.png) no-repeat 0 -20px ;}
+.company_wrap .explanation dd .gray_bx li .icon.type02 {background-position:0 -58px;}
+.company_wrap .explanation dd .gray_bx li .icon.type03 {background-position:0 -92px;}
+.company_wrap .explanation dd .gray_bx li .icon.type04 {background-position:0 -128px;}
+.company_wrap .explanation dd .gray_bx li .icon.type05 {background-position:0 -164px;}
+.company_wrap .explanation dd .gray_bx li .icon.type06 {background-position:0 -201px;}
+.company_wrap .explanation dd .gray_bx li .icon.type07 {background-position:0 -236px;}
+.company_wrap .explanation dd .gray_bx li .icon.type08 {background-position:0 -270px;}
+.company_wrap .explanation dd .gray_bx li .icon.type09 {background-position:0 -380px;}
+.company_wrap .explanation dd .gray_bx li .icon.type10 {background-position:0 -420px;}
+.company_wrap .explanation dd .gray_bx li .icon.type11 {background-position:0 -500px;}
+.company_wrap .explanation dd .gray_bx li .icon.type12 {background-position:0 -535px;}
+
+.company_wrap .explanation dd.lev_bx {display:table; width:100%; border:1px solid #e3e3e3;}
+.company_wrap .explanation dd.lev_bx ul {display:table-row}
+.company_wrap .explanation dd.lev_bx li:first-child {border-left: 0;}
+.company_wrap .explanation dd.lev_bx li {display:table-cell; border-left:1px solid #e3e3e3; width:16%; text-align:center; padding:20px; font-weight:bold; color:#222}
+.company_wrap .explanation dd.lev_bx li .icon {display:block; margin:0 auto 15px; width:44px; height:48px; background: url('../images/content/ico_member_lever.png') no-repeat 0 0;}
+.company_wrap .explanation dd.lev_bx li .icon.type02 {background-position:0 -50px;}
+.company_wrap .explanation dd.lev_bx li .icon.type03 {background-position:0 -100px;}
+.company_wrap .explanation dd.lev_bx li .icon.type04 {background-position:0 -150px;}
+.company_wrap .explanation dd.lev_bx li .icon.type05 {background-position:0 -200px;}
+.company_wrap .explanation dd.lev_bx li .icon.type06 {background-position:0 -250px;}
+
+.company_wrap .explanation dd .line_bx {border:10px solid #f9f9f9; padding:20px; text-align:center;}
+
+/* change_box */
+.company_wrap .change_box {position:relative;}
+.company_wrap .change_box .txt {margin-right:170px; color:#222;}
+.company_wrap .change_box .txt.type02 {margin-right:0;}
+.company_wrap .change_box button {margin-top:20px;}
+
+.company_wrap .change_box.type02 .txt{display:block; line-height:16px; margin-top:21px;}
+.company_wrap .change_box.type02 .img {display:block;}
+
+/* about_bx */
+.company_wrap .about_bx:after {content:""; display:block; clear:both;}
+.company_wrap .about_bx .img{float:left;}
+.company_wrap .about_bx .txt{float:left}
+
+/* map area */
+.company_wrap .map_area {overflow:hidden; height:315px; }
+
+/* gray_bx */
+.company_wrap .gray_box {padding:10px; color:#222; background:#f5f5f5; font-size:12px}
+.company_wrap .gray_box a{color:#db2c27; text-decoration:underline;}
+.company_wrap .gray_box.type02 {border:1px solid #e2e2e2; background:#fafafa; padding:40px;}
+
+
+
+.dot_list ul li{position:relative; padding-left:10px; margin-top:6px; text-indent:0; font-size:12px; color:#666666; line-height:16px;}
+.explanation dt + .dot_list ul li:first-child{margin-top:4px;}
+.dot_list ul li:first-child{margin-top:0;}
+.dot_list ul li:before{content:""; position:absolute; top:6px; left:0; display:inline-block; width:2px; height:2px; background:#222;}
+.explanation dt + .dot_list .table_type01 + ul li:first-child{margin-top:17px;}
+.dot_list.type3 ul{font-size:0; width:100%;}
+.dot_list.type3 ul li{width:33.3%; display:inline-block; box-sizing:border-box;}
+
+/* table */
+.table_type01{margin-top:16px;}
+.table_type01 table{width:100%; border-collapse:collapse; }
+.table_type01 thead tr:first-child th{border-top-color:#333;}
+.table_type01 thead th{height:22px; background:#f7f7f7; border:1px solid #c6c6c6; font-size:12px; color:#222222;}
+.table_type01.th_type02 thead th{height:45px;}
+.table_type01 tbody td{height:44px; border:1px solid #e9e9e9; font-size:12px; color:#444444; text-align:center;}
+
+/* gray_bx type02 */
+.gray_bx.type02{background-color:#fafafa; border:1px solid #e3e3e3; padding:0;}
+.gray_bx.type02 ul:after{content:""; display:block; clear:both;}
+.gray_bx.type02 ul li{float:left; height:178px; text-align:center;}
+.gray_bx.type02 ul .box{width:21%;}
+.gray_bx.type02 ul .box > img{margin-top:20px;}
+.gray_bx.type02 ul .box p{margin-top:8px; font-size:12px; color:#222; line-height:16px; text-align:center; padding:0 18px;}
+.gray_bx.type02 ul .box p a{color:inherit; text-decoration:underline;}
+.gray_bx.type02 ul .icon{width:5%;}
+.gray_bx.type02 ul .icon .icon_arr{margin-top:66px;}
+.gray_bx.type02 ul .box:last-child{width:22%;}
+
+
+.company_wrap .explanation dd .gray_bx.type03{padding:20px 0 20px 20px; background:#fff;}
+.gray_bx.type03 .icon_circle{display:inline-block; margin:0 8px 0 0;}
+.company_wrap .explanation dd .gray_bx.type03 li{padding-left:0; margin-top:10px;}
+.company_wrap .explanation dd .gray_bx.type03 li:first-child{ margin-top:0;}
+.company_wrap .explanation dd .gray_bx.type03 li.non_circle{padding-left:24px;}
+.gray_bx.type03 li:before{display:none;}
+
+.company_wrap .explanation dd .gray_bx.gray_bx.type04{margin-top:0; border-top:0; background:#fff;}
+.company_wrap .explanation dd .gray_bx.gray_bx.type04 li{margin-top:6px; padding-left:0;}
+.company_wrap .explanation dd .gray_bx.gray_bx.type04 li:before{display:none;}
+.company_wrap .explanation dd .gray_bx.gray_bx.type04 li:first-child{margin-top:0;}
+
+.type_infobox{height:200px;}
+.type_infobox:after{content:""; display:block; clear:both;}
+.type_infobox .type_leftbox{float:left; width:300px; height:100%; background:#000; text-align:left;}
+.type_infobox .type_leftbox .type_wrap{padding:20px;}
+.type_infobox .type_leftbox .type_wrap dt{font-size:20px; color:#fff; font-weight:bold;}
+.type_infobox .type_leftbox .type_wrap dd{font-size:16px; color:#999; line-height:19px; margin-top:11px;}
+.type_infobox .type_rightbox{position:relative; float:left; width:680px; height:100%; overflow:hidden;}
+.type_infobox .type_rightbox .type_wrap{position:absolute; padding:0; width:200%; left:-50%; font-size:0; text-align:center;}
+.bigicon_list + .type_infobox{margin-top:47px;}
+.type_infobox + .type_infobox{margin-top:50px;}
+
+.company_wrap .explanation dd .gray_bx.type05{background:none; border:0; padding-left:0;}
+
+
+/* icon */
+.icon_check{display:inline-block; width:14px; height:9px; background: url(../images/company/sp_ico_common.png) no-repeat;}
+.icon_circle{display:block; width:16px; height:16px; margin:20px auto 0 auto; background:#666666; border-radius:100%; font-size:11px; color:#fff; text-align:center;}
+.icon_arr{display:inline-block; width:18px; height:34px; background: url(../images/company/sp_ico_common.png) no-repeat 0 -300px;}
+
+/* list */
+.type_infobox + .bigicon_list .bigicon_area:first-child{margin-top:25px;}
+.bigicon_list .bigicon_area{margin-top:13px; position:relative;}
+.bigicon_list .bigicon_area:first-child{margin-top:0;}
+.bigicon_list .icon{display: inline-block; position:absolute; top:0; left:0; width: 28px; height: 28px; background: url(../images/company/sp_ico_common.png) no-repeat 0 -20px; vertical-align:top; margin-top:4px;}
+.bigicon_list .icon.type02{background-position:0 -92px;}
+.bigicon_list .icon.type03{background-position:0 -340px;}
+.bigicon_list .icon.type04{background-position:0 -380px;}
+.bigicon_list .icon.type05{background-position:0 -420px;}
+.bigicon_list .icon.type06{background-position:0 -460px;}
+.bigicon_list .icon.type07{background-position:0 -500px;}
+.bigicon_list dl{display: inline-block; padding-left:35px; color: #666;}
+.bigicon_list dl dt{font-size: 12px; display: block; color: #222; font-weight:bold;}
+.bigicon_list dl dd{color: #666; line-height:16px;}
+
+
+
+/* link box */
+.company_wrap .link_bx{border:1px solid #e2e2e2; border-top:0; }
+.company_wrap .link_bx ul:first-child {border-left:0;}
+.company_wrap .link_bx ul {font-size:0;display: inline-block; width:33%; border-left:1px solid #e2e2e2;padding-top:20px; padding-bottom:20px; box-sizing:border-box;}
+.company_wrap .link_bx li {padding-left:30px; box-sizing:border-box; }
+.company_wrap .link_bx li span {display:inline-block;  margin-left:5px; width:4px; height:5px;  background: url(../images/company/sp_ico_common.png) no-repeat -35px 0px}
+.company_wrap .link_bx li a {text-decoration:underline; display:block; height:34px; line-height:34px;font-size:12px; }
+
+
+
+/* iPoint */
+.top_gray_bx {background:#efefef url(../images/company/ipoint_top_bg01.png) no-repeat 15px bottom; height:150px; padding:25px 40px 0 215px; box-sizing:border-box }
+.top_gray_bx .tit {font-size:28px; color:#ce332f}
+.top_gray_bx .txt {font-size:14px; color:#333; line-height:16px}
+
+/*manfaat_area*/
+.manfaat_area {font-size:0;}
+.manfaat_area li:first-child {margin-left:0;}
+.manfaat_area li {display:inline-block; width:33.3%; vertical-align:top; text-align:center;}
+
+.manfaat_area li .icon {display:inline-block; background: url(../images/company/sp_ipoint_bg.png) no-repeat center 15px; width:100%; height:145px;}
+.manfaat_area li .icon.type02 {background-position:center -130px;}
+.manfaat_area li .icon.type03 {background-position:center -287px;}
+.manfaat_area li .txt {font-size:12px; color:#333; padding:0 7px 0; }
+.manfaat_area li .txt > img{width:100%; display:block; margin-bottom:10px;}
+
+.manfaat_area.type02 {background:#f7f7f7; padding:30px 10px 30px 15px; box-sizing:border-box}
+.manfaat_area.type02 li .icon{background-position:center -433px; width:120px; height:120px; vertical-align:middle; }
+.manfaat_area.type02 li .icon.type02{background-position:center -562px; width:120px; height:120px; vertical-align:middle; }
+.manfaat_area.type02 li .icon.type03{background-position:center -706px; width:120px; height:120px; vertical-align:middle; }
+.manfaat_area.type02 li .txt {display:inline-block; width:180px; text-align:left; vertical-align:middle; }
+
+
+.manfaat_area.type03 {margin-left:-20px;}
+.manfaat_area.type03 li {position: relative; width:180px; margin-left:20px;}
+.manfaat_area.type03 li .icon {background: url(../images/company/sp_ipoint_bg02.png) no-repeat 0 0; height:133px;}
+.manfaat_area.type03 li .icon.type02 {background-position:0 -133px;}
+.manfaat_area.type03 li .icon.type03 {background-position:0 -266px;}
+.manfaat_area.type03 li .icon.type04 {background-position:0 -399px;}
+.manfaat_area.type03 li .icon.type05 {background-position:0 -532px;}
+
+.manfaat_area.type03 li .icon.type06 {background-position:0 -675px;}
+.manfaat_area.type03 li .icon.type07 {background-position:0 -808px;}
+.manfaat_area.type03 li .icon.type08 {background-position:0 -941px;}
+
+.manfaat_area.type03 li .icon.type09 {background-position:0 -1084px;}
+.manfaat_area.type03 li .icon.type10 {background-position:0 -1217px;}
+.manfaat_area.type03 li .icon.type11 {background-position:0 -1350px;}
+.manfaat_area.type03 li .icon.type12 {background-position:0 -1483px;}
+.manfaat_area.type03 li .icon.type13 {background-position:0 -1616px;}
+
+.manfaat_area.type03 li .icon.type14 {background-position:0 -1084px;}
+.manfaat_area.type03 li .icon.type15 {background-position:0 -1217px;}
+.manfaat_area.type03 li .icon.type16 {background-position:0 -1350px;}
+.manfaat_area.type03 li .icon.type17 {background-position:0 -1483px;}
+.manfaat_area.type03 li .icon.type18 {background-position:0 -1616px;}
+
+.manfaat_area.type03 li .icon.type14 {background-position:0 -1749px;}
+.manfaat_area.type03 li .icon.type15 {background-position:0 -1882px;}
+.manfaat_area.type03 li .icon.type16 {background-position:0 -2015px;}
+.manfaat_area.type03 li .icon.type17 {background-position:0 -2148px;}
+.manfaat_area.type03 li .icon.type18 {background-position:0 -2281px;}
+.manfaat_area.type03 li .icon.type19 {background-position:0 -2414px;}
+
+.manfaat_area.type03 li .txt {text-align:left; margin-top:5px; padding:0; line-height:16px}
+.manfaat_area.type03 .arrow {display:block; width:38px; height:31px; position:absolute; right:-33px; top:55px; background: url(../images/company/ipoint_arrow.png) no-repeat 0 0; z-index:1;}
+
+.manfaat_area.type04{padding:30px 20px; display:table; table-layout:fixed; background:#f2f2f2;}
+.manfaat_area.type04 li{display:table-cell; width:auto; vertical-align:middle;}
+.manfaat_area.type04 li:first-child{width:477px;}
+.manfaat_area.type04 li img{width:100%;}
+.manfaat_area.type04 li dl{width:100%; padding-left:20px; box-sizing:border-box; font-size:12px; text-align:left;}
+.manfaat_area.type04 li dl dt{font-weight:bold; margin-bottom:5px;}
+.manfaat_area.type04 li dl dt .icon_circle{margin:0 8px 0 0; display:inline-block; background:#db2c27;}
+.manfaat_area.type04 li dl dd{padding-left:24px; margin-bottom:20px;}
+.manfaat_area.type04 li dl dd:last-child{margin-bottom:0;}
+
+.manfaat_area.type05 {margin-left:-20px;}
+.manfaat_area.type05 li {position: relative; width:180px; margin-left:20px;}
+.manfaat_area.type05 li .icon {background: url(../images/company/sp_lpoint_bg.png) no-repeat 0 0; height:133px;}
+.manfaat_area.type05 li .icon.type02 {background-position:0 -133px;}
+.manfaat_area.type05 li .icon.type03 {background-position:0 -266px;}
+.manfaat_area.type05 li .icon.type04 {background-position:0 -399px;}
+.manfaat_area.type05 li .icon.type05 {background-position:0 -532px;}
+.manfaat_area.type05 li .icon.type06 {background-position:0 -675px;}
+.manfaat_area.type05 li .icon.type07 {background-position:0 -808px;}
+.manfaat_area.type05 li .icon.type08 {background-position:0 -941px;}
+.manfaat_area.type05 li .icon.type09 {background-position:0 -1084px;}
+.manfaat_area.type05 li .icon.type10 {background-position:0 -1217px;}
+.manfaat_area.type05 li .icon.type11 {background-position:0 -1350px;}
+.manfaat_area.type05 li .icon.type12 {background-position:0 -1483px;}
+.manfaat_area.type05 li .icon.type13 {background-position:0 -1616px;}
+.manfaat_area.type05 li .icon.type14 {background-position:0 -1749px;}
+.manfaat_area.type05 li .icon.type15 {background-position:0 -1882px;}
+.manfaat_area.type05 li .icon.type16 {background-position:0 -2015px;}
+.manfaat_area.type05 li .icon.type17 {background-position:0 -2148px;}
+.manfaat_area.type05 li .icon.type18 {background-position:0 -2281px;}
+.manfaat_area.type05 li .icon.type19 {background-position:0 -2414px;}
+
+.comp_img_bx{text-align:center; border-bottom:1px solid #ececec; font-size:0;}
+.comp_img_bx > p{font-size:12px; margin-bottom:20px;}
+
+/* ipoint table reset */
+.tb_type1.ipoint { border:1px solid #c6c6c6; border-top:1px solid #000;}
+.tb_type1.ipoint thead th{height:46px; box-sizing:border-box; background:#f7f7f7;  border-left:1px solid #c6c6c6; }
+.tb_type1.ipoint thead + tbody tr:first-child td {border-top: 1px solid #c6c6c6;}
+.tb_type1.ipoint tbody td {text-align:left !important;  border-left:1px solid #c6c6c6; border-top:1px solid #c6c6c6; padding-left:30px !important;padding-right:30px !important}
+.tb_type1.ipoint tbody td:last-child {text-align:right !important; font-weight:bold; color:#000}
+
+.tb_comp table{border-top:1px solid #b8b8b8; border-left:1px solid #b8b8b8; width:100%;}
+.tb_comp table th, .tb_comp table td{vertical-align:middle; padding:15px 7px; color:#666; border-right:1px solid #b8b8b8; border-bottom:1px solid #b8b8b8;}
+.tb_comp table th{vertical-align:top; font-weight:normal; background:#fafafa;}
+.tb_comp table th strong{color:#222; font-size:13px; display:block; margin-bottom:10px;}
+.tb_comp table th.left_th{vertical-align:middle; text-align:left; background:#eeeeee;}
+.tb_comp table th.left_th strong{color:#db2c27;}
+.tb_comp table tbody td{text-align:center;}
+.tb_comp table tbody td .td_color01{color:#bcbcbc;}
+.tb_comp table tbody td .check{display:inline-block; width:17px; height:11px; background: url('../images/common/sp_ico_common.png') no-repeat -835px -23px;}
+
+
+.tb_comp table thead th .icon {display:block; margin:15px auto; width:44px; height:48px; background: url('../images/content/ico_member_lever.png') no-repeat 0 0;}
+.tb_comp table thead th .icon.type02 {background-position:0 -50px;}
+.tb_comp table thead th .icon.type03 {background-position:0 -100px;}
+.tb_comp table thead th .icon.type04 {background-position:0 -150px;}
+.tb_comp table thead th .icon.type05 {background-position:0 -200px;}
+.tb_comp table thead th .icon.type06 {background-position:0 -250px;}
+
+.top_mem_bx{position:relative; margin:0 auto; width:740px;}
+.top_mem_bx ul{position:absolute; right:-15px; top:0; padding-top:12px;}
+.top_mem_bx ul li{width:200px; font-size:13px; color:#333333; margin-bottom:48px;}
+.top_mem_bx ul li:nth-child(1){margin-left:-15px;}
+.top_mem_bx ul li:nth-child(2){margin-left:20px; margin-bottom:57px;}
+.top_mem_bx ul li:nth-child(3){margin-left:15px;}
+.top_mem_bx ul li:nth-child(4){margin-left:-15px; margin-top:-7px;}
+
+.top_soc_box{width:100%; position:relative;}
+.top_soc_box img{width:100%;}
+.top_soc_box p{width:600px; position:absolute; bottom:42px; right:20px; color:#fff; font-size:14px;}
+
+/* media area */
+@media all and (max-width:1280px) {
+    .company_wrap .map_area img {margin-left:-140px}
+    .company_wrap .gray_box.type02 {padding:40px 30px 40px;}
+
+    .type_infobox .type_leftbox{width:250px;}
+    .type_infobox .type_rightbox{width:490px;}
+    .bigicon_list dl dd{max-width:690px;}
+    
+    /* iPoint */
+    .top_gray_bx {height:160px}
+
+    /*manfaat_area*/
+    .manfaat_area.type02 li {width:33.3%; padding:0; text-align:center; box-sizing:border-box}
+    .manfaat_area.type02 li .txt {margin-top:10px; width:auto}
+
+    .top_soc_box p{width:448px; bottom:32px;}
+
+}

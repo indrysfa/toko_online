@@ -1,0 +1,56 @@
+$.namespace("indolotte.common.notice");
+indolotte.common.notice = {
+	
+	init : function() {
+	},
+	
+	onSearch : function() {
+		var self = this;
+		if( typeof(DISPLAY_MALL_CODE) !== "undefined" || DISPLAY_MALL_CODE === "0001") {
+			self.onSearchNotice();
+		}
+		else {
+			$("#quickNotice").hide();
+		}
+	},
+	
+	appendForm : function(name, value, formId) {
+		$('<input>').attr({
+			type: 'hidden',
+			name: name,
+			value: value
+		}).appendTo('form[id=' + formId + ']');
+	},
+		
+	linkNoticeInfo : function(noticeNo) {
+		
+		this.appendForm("noticeNo", noticeNo, "paramForm");
+
+		$("#paramForm").attr("action", "/cs/Notice/view.do");
+		$("#paramForm").submit();
+	},
+	
+    onSearchNotice : function() {
+        var self = this;
+        var url = baseUrl + "api/cs/Notice/searchForCSMain";
+
+        indolotte.common.Ajax.sendJSONRequest("GET", url, null, function(response){
+        	if ( response.succeeded ) {
+        		self.setNoticeList(response.data);
+        	}
+        	else {
+        		alert(response.message);
+        	}
+        });
+    },
+    
+    setNoticeList : function (data){
+    	this.listData = data.list;
+        $("#footerNoticeListLayer").empty();
+        $("#footerNoticeList").tmpl(data).appendTo("#footerNoticeListLayer");
+        $('.quick_noti_slide_notice').bxSlider({
+    		mode: 'vertical'
+    	});
+    }
+    
+};
